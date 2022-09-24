@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Dagger2</string>
+    <string name="username">Имя пользователя</string>
+    <string name="welcome_dagger">Добро пожаловать в мир Dagger2!</string>
+    <string name="password">Пароль</string>
+    <string name="login">Войти</string>
+    <string name="registration_dagger">Регистрация в Dagger2!</string>
+    <string name="register">Регистрация</string>
+    <string name="next">Дальше</string>
+    <string name="login_error">Ошибка входа. Попробуйте снова</string>
+    <string name="registration_error">Ошибка регистрации. Попробуйте снова</string>
+    <string name="terms_and_conditions">Условия и положения</string>
+    <string name="tcs_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nibh eget fringilla fringilla, nibh leo gravida leo, sed imperdiet purus dolor vitae urna. Etiam nec tincidunt lacus. Aenean porttitor, orci feugiat porttitor sollicitudin, ante tellus tempus augue, ac facilisis augue eros at mi. Quisque iaculis arcu vel purus egestas, eu aliquet metus pharetra. Sed fringilla, velit ut ullamcorper volutpat, lorem velit tincidunt lacus, eu viverra leo felis vitae risus.</string>
+    <string name="settings">Настройки</string>
+    <string name="logout">Выйти</string>
+    <string name="refresh_notifications">Обновить уведомления</string>
+    <string name="unregister">Отменить регистрацию</string>
+    <string name="placeholder">Место для записи</string>
+</resources>
