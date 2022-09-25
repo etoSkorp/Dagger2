@@ -1,10 +1,13 @@
 package com.example.dagger2.registration
 
+import com.example.dagger2.di.ActivityScope
 import com.example.dagger2.registration.enterdetails.EnterDetailsFragment
 import com.example.dagger2.registration.termsandconditions.TermsAndConditionsFragment
 import dagger.Subcomponent
 
 // Definition of a Dagger subcomponent
+// Classes annotated with @ActivityScope will have a unique instance in this Component
+@ActivityScope
 @Subcomponent
 interface RegistrationComponent {
 

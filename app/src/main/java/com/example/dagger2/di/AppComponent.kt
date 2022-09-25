@@ -1,11 +1,11 @@
 package com.example.dagger2.di
 
 import android.content.Context
+import com.example.dagger2.login.LoginComponent
 import com.example.dagger2.main.MainActivity
-import com.example.dagger2.registration.RegistrationActivity
 import com.example.dagger2.registration.RegistrationComponent
-import com.example.dagger2.registration.enterdetails.EnterDetailsFragment
-import com.example.dagger2.registration.termsandconditions.TermsAndConditionsFragment
+import com.example.dagger2.settings.SettingsActivity
+import com.example.dagger2.user.UserManager
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
@@ -22,9 +22,12 @@ interface AppComponent {
         fun create(@BindsInstance context: Context) : AppComponent
     }
 
-    // Expose RegistrationComponent factory from the graph
-    fun registrationComponent(): RegistrationComponent.Factory
+    // Expose UserManager so that MainActivity and SettingsActivity
+    // can access a particular instance of UserComponent
+    fun userManager(): UserManager
 
-    // Classes that can be injected by this Component
-    fun inject(activity: MainActivity)
+    // Expose RegistrationComponent factory from the graph
+    // Types that can be retrieved from the graph
+    fun registrationComponent(): RegistrationComponent.Factory
+    fun loginComponent(): LoginComponent.Factory
 }
